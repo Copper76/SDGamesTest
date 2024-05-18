@@ -34,4 +34,4 @@ Doing this system was a bit cheating as I have already done a demo on it. Howeve
 - Potentially more once I clarify what the item class should do.
 
 # Credit
-The 2D pixel art was from the Pixel Art Icon Pack - RPG created by Cainos (Asset Store Link)[https://assetstore.unity.com/packages/2d/gui/icons/pixel-art-icon-pack-rpg-158343#description].
+The 2D pixel art was from the Pixel Art Icon Pack - RPG created by Cainos [Asset Store Link](https://assetstore.unity.com/packages/2d/gui/icons/pixel-art-icon-pack-rpg-158343#description).
