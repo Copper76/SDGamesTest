@@ -61,7 +61,7 @@ public class InventoryInitialiser : MonoBehaviour
             }
         }
         transform.parent.gameObject.SetActive(false);
-        inventory.maxStackDict = new int[] { 64, 64, 1, 1, 1, 1, 1 };
+        inventory.maxStackDict = new int[] { 1, 64, 64, 1, 1, 1, 1, 1 };
         inventory.equipSlot = new Dictionary<int, int> { {3, 0}, {4, 1}, { 5, 1 }, {6, 2}, {7, 3} };
         inventory.SetInventoryOffset(inventoryOffset);
         Destroy(this);

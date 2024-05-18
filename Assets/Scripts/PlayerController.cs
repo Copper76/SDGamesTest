@@ -15,7 +15,6 @@ enum InteractMode
 }
 
 [RequireComponent(typeof(Rigidbody))]
-[RequireComponent(typeof(Statistics))]
 [RequireComponent(typeof(Equipper))]
 public class PlayerController : MonoBehaviour
 {
@@ -31,7 +30,7 @@ public class PlayerController : MonoBehaviour
     private float horizontalSens = 5.0f;
     private float verticalSens = 5.0f;
     private float verticalRotationMinimum = 0f;
-    private float verticalRotationMaximum = 60f;
+    private float verticalRotationMaximum = 30f;
 
     private float moveSpeed = 15.0f;
     private float limitSpeed = 10.0f;
@@ -499,7 +498,7 @@ public class PlayerController : MonoBehaviour
                     {
                         goldCount += count;
                     }
-                    count = 0;
+                    break;
                 }
                 else
                 {
@@ -523,7 +522,6 @@ public class PlayerController : MonoBehaviour
             }
         }
         Destroy(other);
-        touchedObject = null;
         promptText.gameObject.SetActive(false);
     }
 
@@ -596,18 +594,23 @@ public class PlayerController : MonoBehaviour
     {
         if (touchedObject == null)
         {
-            if (other.tag == "Pickup")
+            if (other.tag == "Pickup" || other.tag == "Builder")
             {
-                promptText.gameObject.SetActive(true);
-                promptText.SetText("PRESS E TO PICKUP");
                 touchedObject = other.GetComponent<Interactable>();
             }
-
-            if (other.tag == "Builder")
+        }
+        else
+        {
+            promptText.gameObject.SetActive(true);
+            switch (touchedObject.tag)
             {
-                promptText.gameObject.SetActive(true);
-                promptText.SetText("PRESS E TO BUILD");
-                touchedObject = other.GetComponent<Interactable>();
+                case "Pickup":
+                    promptText.SetText("PRESS E TO PICKUP");
+                    break;
+                case "Builder":
+                    promptText.SetText("PRESS E TO BUILD");
+                    break;
+
             }
         }
     }

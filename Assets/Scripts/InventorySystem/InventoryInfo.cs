@@ -32,8 +32,11 @@ public class InventoryInfo : MonoBehaviour
         item_id[index] = id;
         stack[index] = count;
         TextMeshProUGUI text = items[index].GetComponentInChildren<TextMeshProUGUI>();
-        text.enabled = true;
-        text.text = stack[index].ToString();
+        if (stack[index] > 1)
+        {
+            text.enabled = true;
+            text.text = stack[index].ToString();
+        }
     }
 
     public void RemoveItem(int index, int count = 1)
@@ -50,7 +53,14 @@ public class InventoryInfo : MonoBehaviour
         {
             stack[index] -= count;
             TextMeshProUGUI text = items[index].GetComponentInChildren<TextMeshProUGUI>();
-            text.text = stack[index].ToString();
+            if (stack[index] == 1)
+            {
+                text.enabled = false;
+            }
+            else
+            {
+                text.text = stack[index].ToString();
+            }
         }
     }
 
@@ -58,7 +68,11 @@ public class InventoryInfo : MonoBehaviour
     {
         stack[index] += count;
         TextMeshProUGUI text = items[index].GetComponentInChildren<TextMeshProUGUI>();
-        text.text = stack[index].ToString();
+        if (stack[index] > 1)
+        {
+            text.enabled = true;
+            text.text = stack[index].ToString();
+        }
     }
 
     public int FindStackSlot(int id)
