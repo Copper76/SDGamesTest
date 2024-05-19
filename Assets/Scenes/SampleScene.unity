@@ -554,6 +554,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 393457790}
   m_CullTransparentMesh: 1
+--- !u!1 &460681221 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2545276455636809290, guid: 1e0fef2b652c0cc41b2759d86035780a, type: 3}
+  m_PrefabInstance: {fileID: 6818237108050574690}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &460681223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460681221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 120fbbb403ca0d146a70ef09e784342d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &498152417
 GameObject:
   m_ObjectHideFlags: 0
@@ -1247,7 +1264,7 @@ GameObject:
   - component: {fileID: 604578462}
   - component: {fileID: 604578461}
   - component: {fileID: 604578460}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Slope
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2917,7 +2934,7 @@ GameObject:
   - component: {fileID: 1172279599}
   - component: {fileID: 1172279598}
   - component: {fileID: 1172279597}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: step
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3434,7 +3451,7 @@ GameObject:
   - component: {fileID: 1233335454}
   - component: {fileID: 1233335453}
   - component: {fileID: 1233335457}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4071,7 +4088,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1361811092}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Environment
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -6,11 +6,12 @@ TagManager:
   tags:
   - Collectible
   - Pickup
+  - Builder
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Map
   - Water
   - UI
   - Slot
