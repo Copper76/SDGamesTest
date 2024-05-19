@@ -1,19 +1,20 @@
 This is the repository for the practical test for SD games. The demo consists three systems described below:
 
-# Player 3C System
-## Features:
+## Player 3C System
+### Features:
 - Ability to move around using WASD and jump using SPACE BAR.
 - Ability to rotate camera using mouse with limitations and characters with them, working as a 3rd person overshoulder camera.
 - Ability to use E to interact with objects in the world(including picking up collectibles).
 - Prompt player to use E when they are in range of interaction.
 - Use I to open the inventory menu, more on that in the inventory system.
 - Use C to open the stat menu.
+- Have the stats stored in json and loaded at the start of runtime
 - Move into collectibles to pick them up as an alternative method.
 - Dust VFX using particle system when player is walking on ground, SFX was not quite possible as I don't have any audio devices on my working PC for now.
 - Seamlessly transition between different menus.
 
-# Building System
-## Features:
+## Building System
+### Features:
 - Press E when close to building stations to open building menu.
 - Building menu displays the current resources held by player and the amount needed for the next level of building.
 - Upgrade and Destroy menu appearing when the player is able to upgrade or destroy building, the materials are automatically consumed when the building upgrades.
@@ -21,9 +22,9 @@ This is the repository for the practical test for SD games. The demo consists th
 - Visual changes to the building when it is upgraded or destroyed.
 - To compensate for the need of resources, a script for regularly spawning copper and gold ingots is used to continuously generate resources in the scene.
 
-# Inventory System
+## Inventory System
 Doing this system was a bit cheating as I have already done a demo on it. However, I added more features here so it still includes new stuff that was never seen in my previous demo.
-## Features
+### Features
 - Press I to open the inventory menu.
 - Hover cursor on an occupied slot to show the related information.
 - Click and drag items to place them in different slots.
