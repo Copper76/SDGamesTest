@@ -4,6 +4,7 @@ This is the repository for the practical test for SD games. The demo consists th
 ### Features:
 - Ability to move around using WASD and jump using SPACE BAR.
 - Ability to rotate camera using mouse with limitations and characters with them, working as a 3rd person overshoulder camera.
+- Automatically adjust camera position to avoid obscuration.
 - Ability to use E to interact with objects in the world(including picking up collectibles).
 - Prompt player to use E when they are in range of interaction.
 - Use I to open the inventory menu, more on that in the inventory system.
